@@ -66,7 +66,8 @@ CreatorVault currently uses:
 
 - **Supabase** for authentication, PostgreSQL database services, private object
   storage, signed URLs, and server-side Edge Functions.
-- **OpenAI** for creator-triggered AI inference through CreatorVault's server-side\n  processing flow.
+- **OpenAI** for creator-triggered AI inference through CreatorVault's server-side
+  processing flow.
 
 These providers process information as part of delivering CreatorVault's services.
 Provider/admin credentials are kept server-side and are not embedded in the mobile
