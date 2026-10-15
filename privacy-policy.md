@@ -1,6 +1,6 @@
 # CreatorVault Privacy Policy
 
-Last updated: 8 October 2026
+Last updated: 15 October 2026
 
 ## Who operates CreatorVault
 
@@ -66,7 +66,7 @@ CreatorVault currently uses:
 
 - **Supabase** for authentication, PostgreSQL database services, private object
   storage, signed URLs, and server-side Edge Functions.
-- **Cloudflare Workers AI** for creator-triggered AI inference.
+- **OpenAI** for creator-triggered AI inference through CreatorVault's server-side\n  processing flow.
 
 These providers process information as part of delivering CreatorVault's services.
 Provider/admin credentials are kept server-side and are not embedded in the mobile
@@ -77,7 +77,7 @@ application.
 AI analysis happens only after the creator explicitly requests it.
 
 For an image, CreatorVault may create a short-lived private signed preview and pass
-that through the server-side analysis flow to Cloudflare Workers AI.
+that through the authenticated server-side analysis flow to OpenAI.
 
 For a video, CreatorVault sends the generated private thumbnail rather than the raw
 video under the current architecture.
@@ -96,7 +96,7 @@ CreatorVault uses HTTPS/TLS for network traffic. The Android application explici
 disables cleartext traffic and excludes app-private files, databases, shared
 preferences, and device-protected data from Android cloud backup/device transfer.
 
-No Supabase service-role key, Cloudflare AI credential, or other administrator
+No Supabase service-role key, OpenAI credential, or other administrator
 secret is included in the mobile app.
 
 ## Android photo and video access
